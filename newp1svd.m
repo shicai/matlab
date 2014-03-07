@@ -9,6 +9,8 @@
 % will be used to make sure that exp(u*v) has the same column sums that 
 % x does).
 
+% http://www.cs.cmu.edu/~ggordon/psvd/
+
 %% Example
 %% build a random matrix whose componentwise log has low rank
 % uu = randn(10,4);
