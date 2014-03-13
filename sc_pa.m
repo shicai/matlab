@@ -1,3 +1,4 @@
+% Passive Aggressive
 function w = sc_pa(X, label, w)
 
     [D, N] = size(X);
