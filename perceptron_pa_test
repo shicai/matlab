@@ -1,0 +1,24 @@
+ccc;
+D=2;
+N=2000;
+m1 = [0, 0];
+m2 = [5, -2];
+C= [1 0.6;0.6,1];
+X1 =mvnrnd(m1, C, N/2);
+X2 =mvnrnd(m2, C, N/2);
+X=[X1',X2'];
+
+L=ones(1,N);
+L(1:N/2)=-1;
+plot(X(1,:),X(2,:),'b.');
+perm = randperm(N);
+X=[ones(1,N);X(:,perm)];
+L=L(perm);
+w=zeros(3,1);
+
+w = sc_perceptron(X, L)
+id=w'*X>0;
+hold on;plot(X(2,id),X(3,id),'g.');
+w = sc_pa(X, L)
+id=w'*X<0;
+hold on;plot(X(2,id),X(3,id),'r.');
