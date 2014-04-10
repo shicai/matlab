@@ -7,7 +7,7 @@ function W=demo_pa()
     
     % set parameters
     N = 300;  % Number of samples for both classes
-    type = 2; % PA-II, if linearly separatable, just use PA-I (set type=1)
+    type = 2; % PA-II, if linearly separable, just use PA-I (set type=1)
     C = 10;   % Aggressiveness parameter
 
     % generate data
