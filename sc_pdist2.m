@@ -4,7 +4,7 @@ function Dist = sc_pdist2( X, Y, metric )
 % Let X be an D-by-M matrix representing m points in D-dimensional space
 % and Y be an D-by-N matrix representing another set of points in the same
 % space. This function computes the M-by-N distance matrix Dist where Dist(i,j)
-% is the distance between X(:,j) and Y(:,j).  This function has been
+% is the distance between X(:,i) and Y(:,j).  This function has been
 % optimized where possible, with most of the distance computations
 % requiring few or no loops.
 %
